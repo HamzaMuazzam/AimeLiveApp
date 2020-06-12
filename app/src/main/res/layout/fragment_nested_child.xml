@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dull_black"
+    tools:context=".addfragment.NestedChildFragment">
+    <VideoView
+        android:layout_width="match_parent"
+        android:id="@+id/videoView"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/social_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/profile_girl"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <TextView
+            android:id="@+id/tv_hearts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableTop="@drawable/heart"
+            android:fontFamily="@font/sf_ui_medium"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableTop="@drawable/comment_processing_white"
+            android:fontFamily="@font/sf_ui_medium"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tv_shares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableTop="@drawable/share"
+            android:fontFamily="@font/sf_ui_medium"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_toStartOf="@+id/social_button_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_ui_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/sample_tiktok_name"
+            android:textColor="@color/bright_green" />
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_ui_medium"
+            android:padding="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/white" />
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/music_note"
+            android:drawablePadding="@dimen/_6sdp"
+            android:fontFamily="@font/sf_ui_medium"
+            android:padding="@dimen/_10sdp"
+            android:text=""
+            android:id="@+id/tv_mucisName"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

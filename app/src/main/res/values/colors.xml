@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24e28a</color>
+    <color name="colorPrimaryDark">#22ef88</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="dull_black">#C8000000</color>
+    <color name="fb_blue">#3B5998</color>
+    <color name="white">#ffffff</color>
+    <color name="app_green">#24e28a</color>
+    <color name="bright_green">#22ef88</color>
+    <color name="grey">#7B7B7B</color>
+    <color name="pink">#fc46cb</color>
+    <color name="green">#29c28d</color>
+    <color name="blue">#4958c7</color>
+    <color name="transparent">#004958C7</color>
+    <color name="com_facebook_blue">#1877F2</color>
+
+</resources>

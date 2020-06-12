@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/_50sdp"
+    app:contentPadding="@dimen/_15sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:id="@+id/preference_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:padding="@dimen/_7sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_preference"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sf_ui_medium"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="2dp"
+            android:background="@color/bright_green"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/bright_green"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/sf_ui_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gender_male"
+                        android:background="@drawable/gender_bg_blue"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/_10sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/male"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="@string/male"
+                            style="@style/TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="5"
+                            android:drawableLeft="@drawable/coin"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gender_female"
+                        android:background="@drawable/gender_bg_pink"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/_10sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/female"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="@string/female"
+                            style="@style/TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="5"
+                            android:drawableLeft="@drawable/coin"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/both_male_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gender_male_female"
+                        android:background="@drawable/gender_bg_green"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/_10sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/both_male_female"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="@string/both_male_female"
+                            style="@style/TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="5"
+                            android:drawableLeft="@drawable/coin"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textColor="@color/bright_green"
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="@font/sf_ui_medium"
+                    android:padding="@dimen/_6sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_below"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg_white"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp">
+
+
+                        <TextView
+                            android:id="@+id/age_below"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20 - 30"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/_10sdp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/pref_blw_coins"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:text="5"
+                            android:drawableLeft="@drawable/coins_white"
+                            android:background="@drawable/button_bg_green"
+                            android:layout_toRightOf="@+id/age_below"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:padding="3dp"
+                            android:gravity="center"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_average"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg_white"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/age_average"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20 - 30"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/_10sdp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/pref_avg_coin"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:text="5"
+                            android:drawableLeft="@drawable/coins_white"
+                            android:background="@drawable/button_bg_green"
+                            android:layout_toRightOf="@+id/age_average"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:padding="3dp"
+                            android:gravity="center"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_above"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg_white"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/age_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20 - 30"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/_10sdp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/pref_abv_coin"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:text="Free"
+                            android:background="@drawable/button_bg_green"
+                            android:layout_toRightOf="@+id/age_all"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:padding="3dp"
+                            android:gravity="center"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/bright_green"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/sf_ui_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/country"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg_white"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp">
+
+
+                    <TextView
+                        android:id="@+id/dist_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Country"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/pref_ctry_coin"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:text="5"
+                        android:drawableLeft="@drawable/coins_white"
+                        android:background="@drawable/button_bg_green"
+                        android:layout_toRightOf="@+id/dist_country"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg_white"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp">
+
+                    <TextView
+                        android:id="@+id/dist_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My City"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="@dimen/_10sdp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/pref_city_coin"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:text="5"
+                        android:drawableLeft="@drawable/coins_white"
+                        android:background="@drawable/button_bg_green"
+                        android:layout_toRightOf="@+id/dist_city"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/global"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg_white"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp">
+
+                    <TextView
+                        android:id="@+id/dist_global"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Global"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="@dimen/_10sdp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/pref_glb_coin"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:text="Free"
+                        android:background="@drawable/button_bg_green"
+                        android:layout_toRightOf="@+id/dist_global"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/start_matching_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Match"
+            android:background="@drawable/green_button_bg"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_12sdp"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textAllCaps="false"
+            android:fontFamily="@font/sf_ui_medium"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

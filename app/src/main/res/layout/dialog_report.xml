@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/reportContainer"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:contentPadding="@dimen/_15sdp"
+    app:cardElevation="@dimen/_30sdp"
+    android:background="@drawable/report_dialog_bg"
+    >
+
+    <ImageButton
+        android:id="@+id/report_close"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:background="@drawable/gender_bg_red"
+        android:elevation="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/report_fake_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fake Gender"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_ui_medium"
+                android:padding="@dimen/_10sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dark_shaded_line"/>
+
+            <TextView
+                android:id="@+id/report_pornography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pornography"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_ui_medium"
+                android:padding="@dimen/_10sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dark_shaded_line"/>
+
+            <TextView
+                android:id="@+id/report_spam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spam"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_ui_medium"
+                android:padding="@dimen/_10sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dark_shaded_line"/>
+
+            <TextView
+                android:id="@+id/report_lang_violence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language Violence"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_ui_medium"
+                android:padding="@dimen/_10sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dark_shaded_line"/>
+
+            <TextView
+                android:id="@+id/report_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_ui_medium"
+                android:padding="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

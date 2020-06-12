@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/radar"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:src="@drawable/radar_search"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/facial_recognition_phrase"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sf_ui_medium"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:gravity="center"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Medium"/>
+
+            <Button
+                android:id="@+id/stop_search_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stop"
+                android:textColor="@color/white"
+                android:background="@drawable/green_button_bg"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/sf_ui_medium"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:layout_marginEnd="@dimen/_42sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

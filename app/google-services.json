@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "516297808455",
+    "firebase_url": "https://aime-live-app-c34dd.firebaseio.com",
+    "project_id": "aime-live-app-c34dd",
+    "storage_bucket": "aime-live-app-c34dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516297808455:android:8c8b9ec0b9ca29e0ba2f62",
+        "android_client_info": {
+          "package_name": "com.example.aimeliveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516297808455-4hbuqg2cebfh00615mvi3343h02bh6d7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aimeliveapp",
+            "certificate_hash": "62f76763e5166548e3de5de40a8f5844f8e5a63d"
+          }
+        },
+        {
+          "client_id": "516297808455-kmdlnvrmqgder9cmio5j7cjq9954tek1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4MQqWDnMZXzDOWG99aMys9DmodClUYyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516297808455-kmdlnvrmqgder9cmio5j7cjq9954tek1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

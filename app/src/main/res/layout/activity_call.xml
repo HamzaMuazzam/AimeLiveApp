@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sample_call_picker"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@color/dull_black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_20sdp"
+        >
+
+        <include layout="@layout/layout_toolbar_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/toolbar_mirror"/>
+
+        <TextView
+            android:id="@+id/report_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/alert_box"
+            android:onClick="showWarningDialog"
+            android:padding="6dp"
+            android:text="@string/report"
+            android:textColor="@color/white"
+            android:elevation="@dimen/_30sdp"
+            android:layout_below="@id/toolbar_mirror"/>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/information_dialog"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:orientation="vertical"-->
+<!--            android:elevation="@dimen/_20sdp"-->
+<!--            android:padding="@dimen/_20sdp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/blur_effect_disappear"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textAlignment="center"-->
+<!--                android:fontFamily="@font/sf_ui_medium"-->
+<!--                android:gravity="center"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/remove"-->
+<!--                android:fontFamily="@font/sf_ui_medium"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:background="@drawable/green_button_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="@dimen/_5sdp"-->
+<!--                android:onClick="removeInfoDialog"-->
+<!--                android:textAlignment="center"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                android:layout_marginStart="@dimen/_7sdp"-->
+<!--                android:layout_marginEnd="@dimen/_7sdp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/pornographic_and_nidity_are_not_allowed"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/sf_ui_medium"-->
+<!--                android:background="@drawable/dull_bg_rounded"-->
+<!--                android:paddingStart="@dimen/_20sdp"-->
+<!--                android:paddingEnd="@dimen/_20sdp"-->
+<!--                android:paddingTop="@dimen/_5sdp"-->
+<!--                android:paddingBottom="@dimen/_5sdp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                />-->
+
+<!--        </LinearLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/call_chat_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_above="@+id/footer_layout"
+            android:layout_below="@+id/report_button"
+            android:padding="@dimen/_5sdp"
+            android:layout_centerInParent="true"
+            tools:listitem="@layout/item_chat_left"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/gift"
+            android:background="@drawable/gender_bg_pink"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="-30dp"
+            android:elevation="@dimen/_70sdp"
+            android:onClick="showGiftBottomSheet"
+            android:layout_above="@+id/footer_layout"
+            />
+
+        <LinearLayout
+            android:id="@+id/footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="-25dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00:13"
+                    android:gravity="start"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/caller_img"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/sample_caller"
+                    android:onClick="dialVideoCall"
+                    android:background="@drawable/button_bg_white"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/emojis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/emoticon_happy"
+                    android:background="@null"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comment_processing"
+                    android:background="@null"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/emojis"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/close_circle"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -221,7 +221,7 @@
                             android:id="@+id/age_below"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 - 30"
+                            android:text="15 - 25"
                             android:layout_centerVertical="true"
                             android:paddingEnd="@dimen/_10sdp"
 
@@ -260,7 +260,7 @@
                             android:id="@+id/age_average"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 - 30"
+                            android:text="20 - 35"
                             android:layout_centerVertical="true"
                             android:paddingEnd="@dimen/_10sdp"
 
@@ -299,7 +299,7 @@
                             android:id="@+id/age_all"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 - 30"
+                            android:text="25 - 45"
                             android:layout_centerVertical="true"
                             android:paddingEnd="@dimen/_10sdp"
 

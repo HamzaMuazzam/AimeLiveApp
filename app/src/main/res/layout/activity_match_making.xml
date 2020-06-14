@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/sample_caller"
+        android:src="@drawable/love"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:background="@color/dull_black"/>

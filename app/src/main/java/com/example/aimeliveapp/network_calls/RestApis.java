@@ -1,6 +1,7 @@
 package com.example.aimeliveapp.network_calls;
 
 
+import com.example.aimeliveapp.matchmaker.GetMatchResponse;
 import com.example.aimeliveapp.network_calls.getchekuser.GetUserDetailsResponse;
 
 import retrofit2.Call;
@@ -15,6 +16,7 @@ public interface RestApis {
     String BASE_URL = "http://sourceinflow.com/live_app/";
 
     String GET_CHECK_USER = "check_create_user.php";
+    String GET_MATCH_MAKER_RESULT = "match_maker.php";
 
     Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
 
@@ -26,16 +28,15 @@ public interface RestApis {
     );
 
 
-//
-//    @GET(GET_RESTAURANT)
-//    Call<GetRestaurantNameIDResponse> getNameID_of_Restaurant();
-//
-//
-//    @FormUrlEncoded
-//    @POST(GET_RESTAURANT_COMPLETEDETAILS_BY_ID)
-//    Call<GetRestaurantCompleteResponse> getRestaurantCompleteDetailsById(@Field("resID") String resID);
-//
-//
+
+    @FormUrlEncoded
+    @POST(GET_MATCH_MAKER_RESULT)
+    Call<GetMatchResponse> getMatchMakerResult(@Field("start_age") String start_age,
+    @Field("end_age") String end_age,
+    @Field("gender") String gender,
+    @Field("location") String location);
+
+
 //    @FormUrlEncoded
 //    @POST(UPDATE_RESTAURANT)
 //    Call<InsertionResponse> updateRestaurant(@Field("redID") String redID,

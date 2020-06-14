@@ -31,13 +31,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/heart"
-            android:text="1120"
-            android:textColor="@color/white"
-            android:textAlignment="center"
             android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableTop="@drawable/heart"
             android:fontFamily="@font/sf_ui_medium"
-            android:layout_margin="@dimen/_5sdp"/>
+            android:text="1120"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"

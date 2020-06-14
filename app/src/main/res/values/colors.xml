@@ -15,5 +15,7 @@
     <color name="blue">#4958c7</color>
     <color name="transparent">#004958C7</color>
     <color name="com_facebook_blue">#1877F2</color>
-
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
 </resources>

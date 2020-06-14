@@ -4,64 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
-    android:background="@drawable/app_grad_vert">
-    <include layout="@layout/layout_toolbar"/>
+    android:background="@drawable/app_grad_vert"
+    tools:context=".HomeFragment">
 
 
-    <LinearLayout
-        android:id="@+id/social_button_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_gravity="center"
-        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/goto_pref"
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_60sdp"
-            android:src="@drawable/ic_person"
-            app:civ_border_color="@color/white"
-            app:civ_border_width="@dimen/_2sdp"
-            android:layout_margin="@dimen/_5sdp"
-            />
+        <include
+            android:id="@+id/header"
+            layout="@layout/layout_toolbar" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/heart"
-            android:text="0"
-            android:id="@+id/tv_home_heart"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/_5sdp"/>
+            android:id="@+id/tv_onlinestatus"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/header"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:drawableLeft="@drawable/ic_off"
+            android:text=" offline"
+            android:textColor="@color/white" />
 
-        <TextView
+
+        <LinearLayout
+            android:id="@+id/social_button_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/comment_processing_white"
-            android:text="0"
-            android:id="@+id/tv_home_comments"
-            android:textColor="@color/white"
-            android:textAlignment="center"
+            android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/_5sdp"/>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/goto_pref"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/ic_person"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/_2sdp" />
+
+            <TextView
+                android:id="@+id/tv_home_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:drawableTop="@drawable/heart"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_home_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:drawableTop="@drawable/comment_processing_white"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/share"
-            android:text="0"
-            android:id="@+id/tv_home_shares"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/_5sdp"/>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_home_shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:drawableTop="@drawable/share"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
 
 
 </com.jem.liquidswipe.layout.LiquidSwipeFrameLayout>

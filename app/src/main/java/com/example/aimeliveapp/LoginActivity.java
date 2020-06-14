@@ -92,9 +92,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() != null) {
-                    //                    Toast.makeText(LoginActivity.this, "User Alreayd logged in", Toast.LENGTH_SHORT).show();
+                    //                    Toast.makeText(AudioSinchCall.this, "User Alreayd logged in", Toast.LENGTH_SHORT).show();
                 } else {
-                    //                    Toast.makeText(LoginActivity.this, "User Not Logged in", Toast.LENGTH_SHORT).show();
+                    //                    Toast.makeText(AudioSinchCall.this, "User Not Logged in", Toast.LENGTH_SHORT).show();
                 }
             }
         };
@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 // App code
-//                Toast.makeText(LoginActivity.this, "User ID: " + loginResult.getAccessToken().getUserId(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(AudioSinchCall.this, "User ID: " + loginResult.getAccessToken().getUserId(), Toast.LENGTH_SHORT).show();
                 getLoginDetails(loginResult.getAccessToken());
 
             }

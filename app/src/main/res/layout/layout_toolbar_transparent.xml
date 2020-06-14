@@ -8,7 +8,6 @@
         android:id="@+id/profile_pic"
         android:layout_width="@dimen/_55sdp"
         android:layout_height="@dimen/_55sdp"
-        android:src="@drawable/sample_call_picker"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:padding="@dimen/_5sdp"
@@ -31,7 +30,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:fontFamily="@font/sf_ui_medium"
-            android:text="@string/user_name_sample"
+            android:text=""
             style="@style/TextAppearance.AppCompat.Medium"/>
 
         <LinearLayout
@@ -46,7 +45,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="London"
+
                 android:fontFamily="@font/sf_ui_medium"
                 android:textColor="@color/white"
                 android:drawablePadding="5dp"
@@ -57,7 +56,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
-                android:text="4"
                 android:fontFamily="@font/sf_ui_medium"
                 android:textColor="@color/white"
                 android:drawablePadding="5dp"
@@ -71,7 +69,7 @@
         android:id="@+id/conference_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/account_plus"
+        android:src="@drawable/ic_baseline_call_24"
         android:background="@drawable/gender_bg_green"
         android:layout_toStartOf="@+id/more_options"
         android:layout_centerVertical="true"

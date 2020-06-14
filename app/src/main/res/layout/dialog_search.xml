@@ -14,8 +14,8 @@
 
         <ImageView
             android:id="@+id/radar"
-            android:layout_width="@dimen/_250sdp"
-            android:layout_height="@dimen/_250sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:src="@drawable/radar_search"
             android:layout_marginStart="@dimen/_50sdp"
             android:layout_marginEnd="@dimen/_50sdp"
@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/facial_recognition_phrase"
+                android:text="Searching"
                 android:textColor="@color/white"
                 android:fontFamily="@font/sf_ui_medium"
                 android:layout_marginStart="@dimen/_40sdp"
